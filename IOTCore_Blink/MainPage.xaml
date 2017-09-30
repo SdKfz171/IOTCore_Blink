@@ -8,6 +8,30 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <StackPanel>
+            <TextBlock FontSize="40dp">
+                IOT Core Blink 실험
+            </TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="DutyBox"
+                         PlaceholderText="듀티값을 입력해주세요. (기본 듀티값은 1000)"
+                         FontSize="20dp"
+                         Margin="20"></TextBox>
+                <Button Margin="20" 
+                        FontSize="20dp"
+                        Click="Button_Click">값 반영</Button>
+            </StackPanel>
+            
+        </StackPanel>
+        
+        <!--<StackPanel Orientation="Horizontal">
+            <Button HorizontalAlignment="Center"
+                    Margin="40 10"
+                    Click="Button_Click">버튼을 눌러 보시게나</Button>
+            <Button HorizontalAlignment="Center" 
+                    Margin="40 10"
+                    Click="Button_Click_1">이 버튼도 한번 눌러보시게나</Button>
+        </StackPanel>-->
+        
     </Grid>
 </Page>
